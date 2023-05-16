@@ -39,6 +39,9 @@ async function main() {
   await repay(amountDAIToBorrowInWei, DAIAddress, lendingPool, deployer)
   console.log("----------")
   await getBorrowUserData(lendingPool, deployer)
+
+  // of course we are still owing some of the interest, so here are the next steps
+  // TODO: get some ETH exchanged for DAI and return the amount
 }
 
 async function repay(
